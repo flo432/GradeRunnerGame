@@ -1,0 +1,8 @@
+<div class="teaching">
+  <ul class="list-group">
+      <li (click)="buyThis(i, entry.getCost())" [ngClass]="{'disabled': check(i) < entry.getCost()}" class="list-group-item" *ngFor="let entry of science; let i = index;" >
+        {{entry.getName()}}
+        <span class="badge">{{entry.getCost()}}</span>
+      </li>
+  </ul>
+</div>

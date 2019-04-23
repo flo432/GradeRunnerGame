@@ -1,0 +1,33 @@
+.teaching {
+    width: 300px;
+    height: auto;
+    height: 570px;
+    overflow-y: scroll;
+}
+
+.list-group-item:hover {
+  background-color: linen;
+  cursor: pointer;
+}
+.list-group-item:hover.disabled {
+  cursor: not-allowed;
+}
+
+.list-group-item:active {
+  background-color: lightcoral;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.2);
+}

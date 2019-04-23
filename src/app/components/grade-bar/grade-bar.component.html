@@ -1,0 +1,48 @@
+<div class="progress" *ngIf="calculateGrade()<3 && !this.game.isInScienceMode()">
+  <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+       [attr.aria-valuenow]="this.player.getProgress()" aria-valuemin="0" aria-valuemax ="100"
+       style="min-width: 2em;" [style.width]="this.player.getProgress() + '%'">
+    {{calculateGrade()}}
+  </div>
+</div>
+
+<div class="progress" *ngIf="calculateGrade()==3 && !this.game.isInScienceMode()">
+  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+       [attr.aria-valuenow]="this.player.getProgress()" aria-valuemin="0" aria-valuemax ="100"
+       style="min-width: 2em;" [style.width]="this.player.getProgress() + '%'">
+    {{calculateGrade()}}
+  </div>
+</div>
+<div class="progress" *ngIf="calculateGrade()>3 && !this.game.isInScienceMode()">
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+       [attr.aria-valuenow]="this.player.getProgress()" aria-valuemin="0" aria-valuemax ="100"
+       style="min-width: 2em;" [style.width]="this.player.getProgress() + '%'">
+    {{calculateGrade()}}
+  </div>
+</div>
+
+<!-- SCIENCE MODE -->
+
+<div class="progress" *ngIf="this.player.getSatisfaction().getValue()<35 && this.game.isInScienceMode()">
+  <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+       [attr.aria-valuenow]="this.player.getSatisfaction().getValue()" aria-valuemin="0" aria-valuemax ="100"
+       style="min-width: 2em;" [style.width]="this.player.getSatisfaction().getValue() + '%'">
+    {{this.player.getSatisfaction().getValue()}}
+  </div>
+</div>
+
+<div class="progress" *ngIf="this.player.getSatisfaction().getValue()<=75 && this.game.isInScienceMode() && this.player.getSatisfaction().getValue()> 35">
+  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+       [attr.aria-valuenow]="this.player.getSatisfaction().getValue()" aria-valuemin="0" aria-valuemax ="100"
+       style="min-width: 2em;" [style.width]="this.player.getSatisfaction().getValue() + '%'">
+    {{this.player.getSatisfaction().getValue()}}
+  </div>
+</div>
+
+<div class="progress" *ngIf="this.player.getSatisfaction().getValue()>75 && this.game.isInScienceMode()">
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+       [attr.aria-valuenow]="this.player.getSatisfaction().getValue()" aria-valuemin="0" aria-valuemax ="100"
+       style="min-width: 2em;" [style.width]="this.player.getSatisfaction().getValue() + '%'">
+    {{this.player.getSatisfaction().getValue()}}
+  </div>
+</div>

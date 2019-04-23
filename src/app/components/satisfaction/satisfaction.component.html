@@ -1,0 +1,26 @@
+<div class="progress" *ngIf="this.player.getSatisfaction().getValue() > 75">
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+       [attr.aria-valuenow]="this.player.getSatisfaction().getValue()" aria-valuemin="0" aria-valuemax ="100"
+       style="min-width: 2em;" [style.width]="this.player.getSatisfaction().getValue() + '%'">
+       {{this.player.getSatisfaction().getValue()}}
+  </div>
+</div>
+
+<div class="progress" *ngIf="this.player.getSatisfaction().getValue() <= 75 && this.player.getSatisfaction().getValue() > 35">
+  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+       [attr.aria-valuenow]="this.player.getSatisfaction().getValue()" aria-valuemin="0" aria-valuemax ="100"
+       style="min-width: 2em;" [style.width]="this.player.getSatisfaction().getValue() + '%'">
+       {{this.player.getSatisfaction().getValue()}}
+  </div>
+</div>
+
+<div class="progress" *ngIf="this.player.getSatisfaction().getValue() <= 35">
+  <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+       [attr.aria-valuenow]="this.player.getSatisfaction().getValue()" aria-valuemin="0" aria-valuemax ="100"
+       style="min-width: 2em;" [style.width]="this.player.getSatisfaction().getValue() + '%'">
+       {{this.player.getSatisfaction().getValue()}}
+       <div *ngIf="this.game.getBadEvent()">
+          {{runBadEvent()}}
+       </div>
+  </div>
+</div>

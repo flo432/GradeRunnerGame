@@ -1,0 +1,25 @@
+.gr-tab {
+    width: 150px;
+    height: 50px;
+    background-color: #5bc0de;
+    border: solid 1px;
+    border-color: #46b8da;
+    border-radius: 4px;
+}
+
+ul.nav {
+    height: 50px;
+}
+
+.nav-tabs > li > div {
+    width:150px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    text-align: center;
+}
+
+.active {
+    background-color: #3680a8;
+    border-color: #2675a0;
+}

@@ -1,0 +1,3 @@
+export enum Degree {
+  MAGISTER, DOKTOR, DOKTOR_HAB, PROFESOR_NDZW, PROFESOR
+}

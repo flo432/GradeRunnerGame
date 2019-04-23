@@ -1,0 +1,103 @@
+.gr-sesja {
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+    background-color: gray;
+    background-image: url("../../../assets/Backgrounds/sesja.jpg");
+    background-size: cover;
+    z-index: 10000;
+}
+
+.sesja {
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+  background-color: white;
+  z-index: 10000;
+
+
+}
+
+img {
+  z-index: 110010101;
+}
+
+@keyframes move {
+    0% {
+      left: 0px;
+    }
+    5% {
+      left: 386px;
+    }
+    10% {
+      left: 45px;
+    }
+    15% {
+      left: 262px;
+    }
+    20% {
+      left: 432px;
+    }
+    25% {
+      left: 458px;
+    }
+    30% {
+      left: 531px;
+    }
+    35% {
+      left: 968px;
+    }
+    40% {
+      left: 35px;
+    }
+    45% {
+      left: 483px;
+    }
+    50% {
+      left: 400px;
+    }
+    55% {
+      left: 970px;
+    }
+    60% {
+      left: 421px;
+    }
+    65% {
+      left: 110px;
+    }
+    70% {
+      left: 1052px;
+    }
+    75% {
+      left: 670px;
+    }
+    80% {
+      left: 184px;
+    }
+    85% {
+      left: 329px;
+    }
+    90% {
+      left: 136px;
+    }
+    95% {
+      left: 700px;
+    }
+    100% {
+      left: 0px;
+    }
+}
+
+/* The element to apply the animation to */
+.move {
+  position: absolute;
+  animation: move 30s linear infinite;
+}
+
+#character {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}

@@ -1,0 +1,72 @@
+.gr-container {
+    width: 1280px;
+    height: 720px;
+    background-color: gray;
+    margin: 30px auto;
+}
+
+.gr-container > div, .gr-container > div > div {
+    float: left;
+}
+
+.satisfaction {
+    width: 300px;
+    height: 50px;
+    background-color: dimgrey;
+}
+
+.money {
+    width: 390px;
+    height: 50px;
+    background-color: dimgrey;
+    text-align: left;
+    color: mintcream;
+}
+
+.clock {
+    width: 200px;
+    height: 50px;
+    background-color: dimgrey;
+    text-align: center;
+    color: mintcream;
+}
+
+.lvl {
+    width: 390px;
+    height: 50px;
+    background-color: dimgrey;
+    text-align: right;
+    color: mintcream;
+}
+
+.left-tab {
+    width: 300px;
+    height: 520px;
+    display: block;
+}
+
+.gr-tabs {
+    width: 300px;
+    height: 620px;
+    background-color: dimgrey;
+}
+
+.game {
+    width: 980px;
+    height: 620px;
+    background-color: white;
+
+}
+
+.gr-options {
+    width: 300px;
+    height: 50px;
+    background-color: dimgrey;
+}
+
+.grade-bar {
+    width: 980px;
+    height: 50px;
+    background-color: dimgrey;
+
+}

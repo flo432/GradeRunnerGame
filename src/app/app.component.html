@@ -1,0 +1,37 @@
+<div class="gr-container">
+  <div class="satisfaction">
+    <app-satisfaction></app-satisfaction>
+  </div>
+  <div class="money">
+    <app-money></app-money>
+  </div>
+  <div class="clock">
+    <app-clock></app-clock>
+  </div>
+  <div class="lvl">
+    <app-lvl></app-lvl>
+  </div>
+  <div class="left-tab">
+    <div class="gr-tabs">
+      <tabs>
+        <tab [tabTitle]="'Nauka'">
+          <app-teaching></app-teaching>
+        </tab>
+        <tab [tabTitle]="'Dydaktyka'">
+          <app-didactics></app-didactics>
+        </tab>
+      </tabs>
+    </div>
+  </div>
+  <div class="game">
+    <app-game></app-game>
+  </div>
+  <div class="gr-options">
+    <option-bar></option-bar>
+  </div>
+  <div class="grade-bar">
+    <app-grade-bar></app-grade-bar>
+  </div>
+  <app-sesja>
+  </app-sesja>
+</div>

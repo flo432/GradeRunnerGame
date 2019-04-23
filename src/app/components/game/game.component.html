@@ -1,0 +1,6 @@
+<div [@fade]='this.game.bgstate' style="text-align: center;" class="background" [style.background-image]="getBoard()">
+  <p>
+    <img [@leave]='this.game.characterArtstate' [@poke]='state' (click)="clicked()" [src]="this.game.getCharacterArt()"
+         alt="" [style.width.px]="width" [style.height.px]="height" align="middle" id="character">
+  </p>
+</div>
